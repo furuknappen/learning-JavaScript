@@ -92,3 +92,14 @@ updateClock();
 
 // Then, set an interval to call updateClock every 1000 milliseconds (1 second)
 const clockIntervalId = setInterval(updateClock, 1000);
+
+
+try {
+    console.log('About to throw a custom error...');
+    // Create a new Error object and throw it immediately
+    throw new Error('This is a custom error created by the developer.');
+} catch (error) {
+    console.log('Custom error caught!');
+    console.log(`Error Name: ${error.name}`); // Will be 'Error'
+    console.log(`Error Message: ${error.message}`); // Will be our custom message
+}

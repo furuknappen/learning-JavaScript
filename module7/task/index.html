@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>My First Page</title>
+  <!-- <script src="script.js" defer></script> -->
+  <script type="module" src="script.js" defer></script>
+<style> .pagination-controls button.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-color: #007bff;
+}</style>
+</head>
+
+
+<body>
+  <h1>Vintage Games</h1>
+
+  <!-- This container will hold the list of games we fetch -->
+  <div id="resultsContainer">
+    <p>Loading...</p>
+  </div>
+
+  <!-- This will hold our pagination buttons -->
+  <div class="pagination-controls">
+    <button id="prevButton">Previous</button>
+    <button id="nextButton">Next</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

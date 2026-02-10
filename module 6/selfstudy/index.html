@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Watchlist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🐾 Pet Adoption Center</h1>
+        <div class="header-info">
+            <span id="lastUpdated">Never updated</span>
+            <button id="refreshBtn">Refresh Pets</button>
+        </div>
+    </header>
+    
+    <main>
+        <section class="stats-section">
+            <h2>Your Watchlist</h2>
+            <div id="watchlistStats">
+                <p>You have <span id="watchlistCount">0</span> pets in your watchlist</p>
+            </div>
+            <button id="clearWatchlist">Clear Watchlist</button>
+        </section>
+        
+        <hr>
+        
+        <section class="pets-section">
+            <h2>Available Pets</h2>
+            <div id="loadingIndicator" class="loading">Loading adorable pets...</div>
+            <div id="errorMessage" class="error" style="display: none;"></div>
+            <div id="petsContainer" class="pets-grid">
+                <!-- Pets will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+    
+    <div id="toastContainer" class="toast-container"></div>
+    
+    <footer>
+        <p id="copyright">© <span id="currentYear"></span> Pet Adoption Center</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
